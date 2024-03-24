@@ -11,7 +11,7 @@ export default function Chat() {
       <div className="bg-dark flex justify-center h-screen">
         <div className="flex flex-col w-full sm:max-w-xl px-5">
           {messages.length != 0 ? (
-            <div className="text-light mt-10 h-full overflow-y-auto">
+            <div className="text-light mt-10 h-2/3 overflow-y-auto">
               {messages.map((m) => (
                 <div
                   key={m.id}
@@ -39,7 +39,7 @@ export default function Chat() {
           )}
           <form onSubmit={handleSubmit} className="">
             <input
-              className={`bg-dark text-light text-md font-normal border-[3px] border-pink fixed bottom-0 p-5 mb-10 rounded-full shadow-xl focus:outline-none w-4/5 sm:w-[539px]`}
+              className={`bg-dark text-light text-md font-normal border-[3px] border-pink fixed bottom-0 p-5 mb-10 rounded-full shadow-xl focus:outline-none w-[350px] sm:w-[539px]`}
               value={input}
               placeholder="Say something..."
               onChange={handleInputChange}
