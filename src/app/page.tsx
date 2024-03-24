@@ -21,13 +21,12 @@ export default function Chat() {
                       : "text-md font-normal pb-5"
                   }`}
                 >
-                  {m.role === "user" ? "User: " : "AI: "}
                   {m.content}
                 </div>
               ))}
             </div>
           ) : (
-            <div className="p-5 bg-gradient-to-b from-pink to-darkpink  text-light mt-10 flex flex-col space-y-5 rounded-lg overflow-y-auto">
+            <div className="p-5 bg-gradient-to-b from-pink to-darkpink  text-light mt-10 flex flex-col space-y-5 rounded-2xl overflow-y-auto">
               <h3 className="text-2xl font-bold">MIRAYA AI</h3>
               <p className="text-md font-normal">
                 Miraya is an advanced AI chatbot designed to provide intelligent

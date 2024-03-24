@@ -4,8 +4,8 @@ export default function Navbar() {
       <a href="/" className="text-2xl font-bold">
         Miraya
       </a>
-      <a href="/login" className="px-5 py-2 bg-pink rounded-full">
-        Login
+      <a href="/auth/signin" className="px-5 py-2 bg-pink rounded-full">
+        Signin
       </a>
     </div>
   );
