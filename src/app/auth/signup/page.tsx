@@ -53,7 +53,7 @@ export default function Signup() {
             id="name"
             type="text"
             onChange={(e) => setName(e.target.value)}
-            className="p-2.5 rounded-lg focus:outline-none text-dark"
+            className="p-2.5 rounded-lg focus:outline-none bg-pink border border-light text-light"
           />
         </div>
         <div className="flex flex-col py-2.5">
@@ -65,7 +65,7 @@ export default function Signup() {
             id="email"
             type="email"
             onChange={(e) => setEmail(e.target.value)}
-            className="p-2.5 rounded-lg focus:outline-none text-dark"
+            className="p-2.5 rounded-lg focus:outline-none bg-pink border border-light text-light"
           />
         </div>
         <div className="flex flex-col py-2.5 pb-5">
@@ -77,10 +77,13 @@ export default function Signup() {
             id="pass"
             type="pass"
             onChange={(e) => setPass(e.target.value)}
-            className="p-2.5 rounded-lg focus:outline-none text-dark"
+            className="p-2.5 rounded-lg focus:outline-none bg-pink border border-light text-light"
           />
         </div>
-        <button type="submit" className="bg-dark p-2.5 rounded-lg">
+        <button
+          type="submit"
+          className="bg-dark border border-dark p-2.5 rounded-lg"
+        >
           Submit
         </button>
       </form>

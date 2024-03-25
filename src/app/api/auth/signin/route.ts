@@ -1,5 +1,6 @@
 import { NextResponse } from "next/server";
 import { neon } from "@neondatabase/serverless";
+import { redirect } from "next/navigation";
 
 const db = process.env.DATABASE_URL || "";
 const sql = neon(db);
@@ -25,5 +26,7 @@ export async function POST(request: any) {
   } catch (e) {
     console.error(`${e}`);
   }
+
+  redirect("/");
   return NextResponse.json(data);
 }

@@ -52,7 +52,7 @@ export default function Signin() {
             id="email"
             type="email"
             onChange={(e) => setEmail(e.target.value)}
-            className="p-2.5 rounded-lg focus:outline-none bg-light text-dark font-medium"
+            className="p-2.5 rounded-lg focus:outline-none bg-pink border border-light text-light font-medium"
           />
         </div>
         <div className="flex flex-col py-2.5 pb-5">
@@ -63,11 +63,15 @@ export default function Signin() {
             required
             id="pass"
             type="pass"
+            minLength={8}
             onChange={(e) => setPass(e.target.value)}
-            className="p-2.5 rounded-lg focus:outline-none bg-light text-dark font-medium"
+            className="p-2.5 rounded-lg focus:outline-none bg-pink border border-light text-light font-medium"
           />
         </div>
-        <button type="submit" className="bg-dark p-2.5 rounded-lg">
+        <button
+          type="submit"
+          className="bg-dark p-2.5 rounded-lg border border-dark"
+        >
           Submit
         </button>
       </form>

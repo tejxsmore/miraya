@@ -6,12 +6,12 @@ import Navbar from "@/components/Navbar";
 export default function Chat() {
   const { messages, input, handleInputChange, handleSubmit } = useChat();
   return (
-    <>
+    <div className="h-screen">
       <Navbar />
-      <div className="bg-dark flex justify-center h-screen">
+      <div className="bg-dark flex justify-center">
         <div className="flex flex-col w-full sm:max-w-xl px-5">
           {messages.length != 0 ? (
-            <div className="text-light mt-10 h-2/3 overflow-y-auto">
+            <div className="text-light mt-10 h-3/5 sm:h-2/3 overflow-y-auto">
               {messages.map((m) => (
                 <div
                   key={m.id}
@@ -46,6 +46,6 @@ export default function Chat() {
           </form>
         </div>
       </div>
-    </>
+    </div>
   );
 }
