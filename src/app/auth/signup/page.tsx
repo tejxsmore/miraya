@@ -82,7 +82,7 @@ export default function Signup() {
         </div>
         <button
           type="submit"
-          className="bg-dark border border-dark p-2.5 rounded-lg"
+          className="bg-dark border border-dark p-2.5 rounded-l focus:outline-none"
         >
           Submit
         </button>

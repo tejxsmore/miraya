@@ -70,7 +70,7 @@ export default function Signin() {
         </div>
         <button
           type="submit"
-          className="bg-dark p-2.5 rounded-lg border border-dark"
+          className="bg-dark p-2.5 rounded-lg border border-dark focus:outline-none"
         >
           Submit
         </button>
